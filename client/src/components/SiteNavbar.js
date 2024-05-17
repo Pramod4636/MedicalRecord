@@ -1,7 +1,7 @@
 import Identicon from 'identicon.js';
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.png'
 
 const SiteNavbar = ({token, account, setAccount, setToken}) => {
     const navigate = useNavigate()
@@ -15,8 +15,17 @@ const SiteNavbar = ({token, account, setAccount, setToken}) => {
     }
     return (
         <Navbar collapseOnSelect expand="md" variant="dark" bg='coolColor' fixed="top" className="site-navbar">
-            <Container>
-                <Navbar.Brand as={Link} to="/"><img className='ml-2' height="40" src={logo} /></Navbar.Brand>
+          
+           <Container>
+                {/* <Navbar.Brand as={Link} to="/"><img className='ml-2' height="40" src={logo} />
+                <h1 style={{ color: 'white', textAlign: 'center' }} >Med3Safe</h1>
+                
+                </Navbar.Brand> */}
+
+                <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+                    <img className="ml-2" height="40" src={logo} alt="logo" />
+                    <h1 style={{ color: 'white', marginLeft: '10px' }}>Med3Safe</h1>
+                </Navbar.Brand>
                 <Nav justify>
                     { token!=='' && account!=="" ? 
                         <>
@@ -42,6 +51,7 @@ const SiteNavbar = ({token, account, setAccount, setToken}) => {
                         </>
                         : 
                         <>
+                            
                             <Nav.Link as={Link} to="/login" >
                                 <small className='text-nav'>
                                     Login
