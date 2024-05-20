@@ -131,7 +131,7 @@ const Patient = ({mediChain, account, ethValue}) => {
             </Form>
             <div>
               <span>Your records are stored here: &nbsp; &nbsp;</span>
-              <Button variant="coolColor" style={{width: "20%", height: "4vh"}} onClick={handleShowRecordModal}>View Records</Button>
+              <Button variant="coolColor" style={{width: "20%", height: "5vh"}} onClick={handleShowRecordModal}>View Records</Button>
             </div>
           </div>
           <div className='box'>

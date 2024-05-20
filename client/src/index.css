@@ -49,10 +49,10 @@ body {
 }
 
 .bg-coolColor{
-  background-color: #09335E !important;
+  background-color: #232b2b !important;
 }
 .btn-coolColor{
-  background-color: #09335E !important;
+  background-color: #232b2b !important;
   color:#fff !important;
 }
 nav {
@@ -77,7 +77,6 @@ nav {
 .text-nav{
   margin-right: 2rem;
   font-size: 1rem;
-
 }
 
 .box{
@@ -85,13 +84,13 @@ nav {
   border-radius: 10px;
   padding: 2vh 1vw;
   margin-bottom: 5vh;
-  background-color: #D5F3FE !important;
+  background-color: #CCCCFF !important;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
 }
 .box h2 {
   position: relative;
   border-radius: 6px;
-  color: #12294e !important;
+  color: #232b2b !important;
   padding: 1vh 1vw;
   font-weight: 400;
   margin-bottom: 2vh;
